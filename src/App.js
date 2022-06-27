@@ -1,11 +1,14 @@
 import React from 'react';
-import GlobalStyle from './GlobalStyle';
+import ThemeContextProvider from './context/ThemeModeContext';
+import Homepage from './pages/Homepage';
+import GlobalStyle from './styles/GlobalStyle';
 
 function App() {
   return (
-    <>
+    <ThemeContextProvider>
       <GlobalStyle />
-    </>
+      <Homepage />
+    </ThemeContextProvider>
   );
 }
 
