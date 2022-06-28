@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { FiMoon } from "react-icons/fi";
 import { BsSun } from "react-icons/bs";
-import { MobileIcon } from "../styles/sections/NavbarStyle";
+import { MobileIcon } from "../styles/components/NavbarStyle";
 import { ThemeModeContext } from "../context/ThemeModeContext";
 
 const ToggleTheme = ({ toggle }) => {

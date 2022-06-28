@@ -1,37 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BiMenu, BiX } from "react-icons/bi";
-import { Nav, NavbarContainer, NavLogo, IconContainer, MobileIcon, NavMenu, NavItem, NavLinks } from '../styles/sections/NavbarStyle';
+import { Text } from "../styles/GlobalStyle";
+import {
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  IconContainer,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
+} from "../styles/components/NavbarStyle";
 import ToggleTheme from "./ToggleTheme";
 
 function Navbar() {
+  const pdfFile = "/assets/mike-arvene-lantin-resume.pdf";
   const [toggle, setToggle] = useState(false);
-  // const [show, setShow] = useState("0");
-
-  // var prevScrollpos = window.pageYOffset;
-
-  // if (toggle) {
-  //   document.body.style.overflow = "hidden";
-  // } else {
-  //   document.body.style.overflow = "scroll";
-  // }
-
-  // const controlNav = (window.onscroll = () => {
-  //   var currentScrollPos = window.pageYOffset;
-  //   if (prevScrollpos > currentScrollPos) {
-  //     setShow("0");
-  //   } else {
-  //     setShow("-6rem");
-  //   }
-  //   prevScrollpos = currentScrollPos;
-  // });
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", controlNav);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", controlNav);
-  //   };
-  // }, []);
 
   const handleClick = () => {
     setToggle(!toggle);
@@ -47,19 +31,23 @@ function Navbar() {
           <ToggleTheme toggle={toggle} />
           <MobileIcon onClick={handleClick} toggle={toggle}>
             {toggle ? <BiX /> : <BiMenu />}
-            {console.log(toggle)}
           </MobileIcon>
         </IconContainer>
         <NavMenu toggle={toggle}>
-          {["About", "Skills", "Work", "Contact"].map((item) => (
+          {["about", "project", "contact"].map((item) => (
             <NavItem key={item}>
               <NavLinks href={`#${item}`} onClick={() => setToggle(false)}>
                 {item}
               </NavLinks>
             </NavItem>
           ))}
-          <p>Say Hello</p>
-          <NavLinks href="mailto:arvene.business@gmail.com">arvene.business@gmail.com</NavLinks>
+          <NavLinks href={pdfFile} target="_blank" download rel="noreferrer">
+            Resume
+          </NavLinks>
+          <Text>Say Hello</Text>
+          <NavLinks href="mailto:arvene.business@gmail.com">
+            arvene.business@gmail.com
+          </NavLinks>
         </NavMenu>
       </NavbarContainer>
     </Nav>

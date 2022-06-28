@@ -1,0 +1,56 @@
+import styled from "styled-components";
+import { Section, Text } from "../../GlobalStyle";
+
+export const FooterSection = styled.footer`
+  background-color: ${({ theme }) => theme.oppositeBackground};
+`;
+
+export const FooterContainer = styled(Section)`
+  padding: 70px 20px;
+  width: 100%;
+  flex-direction: column;
+
+  @media screen and (min-width: 428px) {
+    padding: 70px 50px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
+
+export const SocialIcons = styled.div`
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 0;
+  }
+`;
+
+export const FooterText = styled(Text)`
+  color: ${({ theme }) => theme.oppositeColor};
+`;
+
+export const SocialLinks = styled.a`
+  width: var(--md-is);
+  height: var(--md-is);
+
+  @media screen and (min-width: 428px) {
+    width: var(--large-is);
+    height: var(--large-is);
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: ${({ theme }) => theme.oppositeColor};
+
+    :hover {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+  }
+`;

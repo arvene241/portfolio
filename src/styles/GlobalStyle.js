@@ -26,15 +26,47 @@ const GlobalStyle = createGlobalStyle`
   ul {
     list-style-type: none;
   }
+`;
 
-  p {
-    font-size: var(--default-fs);
+export const MainHeading = styled.h1`
+  font-family: var(--font-secondary);
+  font-size: var(--large-fs);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 30px;
 
-    @media screen and (min-width: 428px) {
-      font-size: var(--small-fs);
-    }
+  @media screen and (min-width: 428px) {
+    font-size: var(--xl-fs);
+    line-height: 60px;
   }
-  
+`;
+
+export const SectionHeading = styled(MainHeading)`
+  margin-bottom: 35px;
+
+  @media screen and (min-width: 428px) {
+    margin-bottom: 40px;
+  }
+`;
+
+export const Heading = styled.h2`
+  font-size: var(--small-fs);
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 428px) {
+    font-size: var(--medium-fs);
+  }
+`;
+
+export const Text = styled.p`
+  font-size: var(--default-fs);
+  font-weight: 300;
+  line-height: 30px;
+
+  @media screen and (min-width: 428px) {
+    font-size: var(--small-fs);
+  }
 `;
 
 export const flex = css`
@@ -43,8 +75,51 @@ export const flex = css`
   justify-content: center;
 `;
 
+export const icons = css`
+  width: var(--small-is);
+  height: var(--small-is);
+
+  @media screen and (min-width: 428px) {
+    width: var(--md-is);
+    height: var(--md-is);
+  }
+`;
+
 export const Container = styled.div`
   ${flex};
+  flex-direction: column;
+  padding: 0 20px;
+
+  @media screen and (min-width: 428px) {
+    padding: 0 50px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+`
+
+export const Section = styled.section`
+  ${flex};
+  max-width: 325px;
+  margin: auto;
+  height: auto;
+  padding: 70px 0;
+
+  @media screen and (min-width: 428px) {
+    padding: 100px 0;
+    max-width: 605px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 200px 0;
+    max-width: 1028px;
+  }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export default GlobalStyle;

@@ -7,23 +7,20 @@ const Variables = css`
 
     --font-main: "Poppins", sans-serif;
     --font-secondary: "Playfair Display", serif;
-
-    --pc-bg-fs: 200px;
-    --tablet-bg-fs: 150px;
-    --phone-bg-fs: 90px;
+    
     --xl-fs: 64px;
     --large-fs: 32px;
     --medium-fs: 24px;
-    --small-fs: 20px;
+    --small-fs: 16px;
     --default-fs: 13px;
 
     --max-width: 1030px;
     --nav-max-width: 1240px;
 
-    --small-is: 20px;
-    --md-is: 25px;
-    --large-is: 30px;
-    --xl-is: 40px;
+    --small-is: 15px;
+    --md-is: 20px;
+    --large-is: 25px;
+    --xl-is: 30px;
   }
 `;
 

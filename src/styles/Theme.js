@@ -4,7 +4,7 @@ export const lightTheme = {
   oppositeBackground: "#001216",
   oppositeColor: "#F7F9F8",
   backgroundText: "#CFCFCF",
-  buttonBorder: "#000000",
+  buttonBorder: "#001216",
 };
 
 export const darkTheme = {
@@ -13,5 +13,5 @@ export const darkTheme = {
   oppositeBackground: "#F7F9F8",
   oppositeColor: "#000000",
   backgroundText: "#CFCFCF",
-  buttonBorder: "none",
+  buttonBorder: "#F7F9F8",
 };

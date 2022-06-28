@@ -3,11 +3,13 @@ import { flex } from "../GlobalStyle";
 
 export const Nav = styled.nav`
   position: fixed;
-  top: 25px;
+  padding-top: 25px;
+  top: 0;
   left: 0;
   width: 100%;
   background: ${({ theme }) => theme.background};
   transition: top 0.3s;
+  z-index: 100;
 `;
 
 export const NavbarContainer = styled.div`
@@ -42,6 +44,10 @@ export const NavLogo = styled.a`
     color: ${({ theme }) => theme.color};
   }
 
+  @media screen and (min-width: 429px) and (max-width: 570px) {
+    z-index: 90;
+  }
+
   @media screen and (min-width: 1024px) {
     font-size: var(--large-fs);
   }
@@ -50,10 +56,20 @@ export const NavLogo = styled.a`
 export const MobileIcon = styled.div`
   display: block;
   cursor: pointer;
-  width: var(--small-is);
-  height: var(--small-is);
   z-index: 100;
   ${flex};
+  width: var(--md-is);
+  height: var(--md-is);
+
+  @media screen and (min-width: 428px) {
+    width: var(--large-is);
+    height: var(--large-is);
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: var(--xl-is);
+    height: var(--xl-is);
+  }
 
   .themeIcon {
     width: 80%;
@@ -64,17 +80,7 @@ export const MobileIcon = styled.div`
     width: 100%;
     height: 100%;
     fill: ${({ theme, toggle }) =>
-    toggle ? theme.background : theme.oppositeBackground};
-  }
-
-  @media screen and (min-width: 428px) {
-    width: var(--md-is);
-    height: var(--md-is);
-  }
-
-  @media screen and (min-width: 1024px) {
-    width: var(--xl-is);
-    height: var(--xl-is);
+      toggle ? theme.background : theme.oppositeBackground};
   }
 `;
 
@@ -109,7 +115,7 @@ export const NavMenu = styled.ul`
   @media screen and (min-width: 428px) {
     position: absolute;
     top: 0;
-    right: 35px;
+    right: 40px;
     left: unset;
     width: 370px;
     height: 450px;
@@ -118,10 +124,13 @@ export const NavMenu = styled.ul`
   }
 `;
 
-export const NavItem = styled.li``;
+export const NavItem = styled.li`
+  a {
+    text-transform: capitalize;
+  }
+`;
 
 export const NavLinks = styled.a`
-  color: ${({ theme, toggle }) =>
-    toggle ? theme.color : theme.oppositeColor};
+  color: ${({ theme, toggle }) => (toggle ? theme.color : theme.oppositeColor)};
   font-size: var(--small-fs);
 `;
