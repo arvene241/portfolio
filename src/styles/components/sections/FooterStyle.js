@@ -42,15 +42,8 @@ export const SocialLinks = styled.a`
     width: var(--large-is);
     height: var(--large-is);
   }
-
+  
   svg {
-    width: 100%;
-    height: 100%;
     fill: ${({ theme }) => theme.oppositeColor};
-
-    :hover {
-      opacity: 0.8;
-      transform: scale(1.1);
-    }
   }
 `;

@@ -79,6 +79,17 @@ export const icons = css`
   width: var(--small-is);
   height: var(--small-is);
 
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: ${({ theme }) => theme.color};
+
+    :hover {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+  }
+
   @media screen and (min-width: 428px) {
     width: var(--md-is);
     height: var(--md-is);
