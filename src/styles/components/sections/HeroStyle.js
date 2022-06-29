@@ -72,17 +72,6 @@ export const SocialIcons = styled.div`
 
 export const SocialLinks = styled.a`
   ${icons};
-
-  svg {
-    width: 100%;
-    height: 100%;
-    fill: ${({ theme }) => theme.color};
-
-    :hover {
-      opacity: 0.8;
-      transform: scale(1.1);
-    }
-  }
 `;
 
 export const HeroPeeps = styled.img`

@@ -36,12 +36,11 @@ export const NavLogo = styled.a`
   font-size: var(--small-fs);
   font-family: var(--font-secondary);
   text-transform: uppercase;
-  color: ${({ theme, toggle }) => (toggle ? theme.oppositeColor : theme.color)};
+  color: ${({ theme }) => theme.color};
   z-index: 100;
 
   @media screen and (min-width: 428px) {
     font-size: var(--medium-fs);
-    color: ${({ theme }) => theme.color};
   }
 
   @media screen and (min-width: 429px) and (max-width: 570px) {
@@ -79,8 +78,12 @@ export const MobileIcon = styled.div`
   svg {
     width: 100%;
     height: 100%;
-    fill: ${({ theme, toggle }) =>
-      toggle ? theme.background : theme.oppositeBackground};
+    fill: ${({ theme }) => theme.oppositeBackground};
+
+    @media screen and (min-width: 428px) {
+      fill: ${({ theme, toggle }) =>
+        toggle ? theme.background : theme.oppositeBackground};
+    }
   }
 `;
 
@@ -99,8 +102,7 @@ export const NavMenu = styled.ul`
   align-items: start;
   flex-direction: column;
   padding: 0 50px;
-  background-color: ${({ theme, toggle }) =>
-    toggle ? theme.oppositeBackground : theme.background};
+  background-color: ${({ theme }) => theme.background};
   z-index: 99;
   gap: 1rem;
 
@@ -108,8 +110,12 @@ export const NavMenu = styled.ul`
     padding-top: 20px;
     text-transform: uppercase;
     letter-spacing: 0.25em;
-    color: ${({ theme, toggle }) =>
-      toggle ? theme.oppositeColor : theme.color};
+    color: ${({ theme }) => theme.color};
+
+    @media screen and (min-width: 428px) {
+      color: ${({ theme, toggle }) =>
+        toggle ? theme.oppositeColor : theme.color};
+    }
   }
 
   @media screen and (min-width: 428px) {
@@ -121,6 +127,8 @@ export const NavMenu = styled.ul`
     height: 450px;
     opacity: ${({ toggle }) => (toggle ? 1 : 0)};
     visibility: ${({ toggle }) => (toggle ? "visible" : "hidden")};
+    background-color: ${({ theme, toggle }) =>
+      toggle ? theme.oppositeBackground : theme.background};
   }
 `;
 
@@ -131,6 +139,11 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled.a`
-  color: ${({ theme, toggle }) => (toggle ? theme.color : theme.oppositeColor)};
+  color: ${({ theme }) => theme.color};
   font-size: var(--small-fs);
+
+  @media screen and (min-width: 428px) {
+    color: ${({ theme, toggle }) =>
+      toggle ? theme.color : theme.oppositeColor};
+  }
 `;
