@@ -29,7 +29,7 @@ function Projects() {
         <ProjectsList>
           {projectsData.map((project, index) => (
             <Project key={index} as={motion.div} variants={YAnimate}>
-              <ProjectImage src={project.img} />
+              <ProjectImage src={project.img} alt={project.title}/>
               <ProjectContent className="project-content">
                 <ProjectHeading>{project.title}</ProjectHeading>
                 <ProjectText>{project.desc}</ProjectText>
