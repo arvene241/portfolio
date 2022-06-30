@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Section, Text } from "../../GlobalStyle";
+import { icons, Section, Text } from "../../GlobalStyle";
 
 export const FooterSection = styled.footer`
   background-color: ${({ theme }) => theme.oppositeBackground};
@@ -32,9 +32,15 @@ export const SocialIcons = styled.div`
 
 export const FooterText = styled(Text)`
   color: ${({ theme }) => theme.oppositeColor};
+  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    text-align: left;
+  }
 `;
 
 export const SocialLinks = styled.a`
+  ${icons};
   width: var(--md-is);
   height: var(--md-is);
 
@@ -42,7 +48,7 @@ export const SocialLinks = styled.a`
     width: var(--large-is);
     height: var(--large-is);
   }
-  
+
   svg {
     fill: ${({ theme }) => theme.oppositeColor};
   }

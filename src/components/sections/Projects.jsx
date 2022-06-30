@@ -1,16 +1,34 @@
 import React from "react";
 import { Section, SectionHeading } from "../../styles/GlobalStyle";
 import { projectsData } from "../../data/projectsData";
-import { IconLink, Icons, Project, ProjectContent, ProjectHeading, ProjectImage, ProjectsContainer, ProjectsList, ProjectText } from "../../styles/components/sections/ProjectsStyle";
+import {
+  IconLink,
+  Icons,
+  Project,
+  ProjectContent,
+  ProjectHeading,
+  ProjectImage,
+  ProjectsContainer,
+  ProjectsList,
+  ProjectText,
+} from "../../styles/components/sections/ProjectsStyle";
+import { motion } from "framer-motion";
+import { YAnimate, parentAnimate } from "../../data/animations";
 
 function Projects() {
   return (
     <Section id="project">
-      <ProjectsContainer>
-        <SectionHeading>projects</SectionHeading>
+      <ProjectsContainer
+        as={motion.div}
+        initial={"hidden"}
+        whileInView={"visible"}
+        variants={parentAnimate}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <SectionHeading as={motion.h1} variants={YAnimate}>projects</SectionHeading>
         <ProjectsList>
           {projectsData.map((project, index) => (
-            <Project key={index}>
+            <Project key={index} as={motion.div} variants={YAnimate}>
               <ProjectImage src={project.img} />
               <ProjectContent className="project-content">
                 <ProjectHeading>{project.title}</ProjectHeading>

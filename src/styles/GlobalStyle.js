@@ -2,6 +2,7 @@ import styled, { createGlobalStyle, css } from "styled-components";
 import Variables from "./Variables";
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500&display=swap');
   ${Variables};
 
   * {
