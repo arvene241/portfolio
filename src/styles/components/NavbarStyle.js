@@ -78,10 +78,9 @@ export const MobileIcon = styled.div`
   svg {
     width: 100%;
     height: 100%;
-    fill: ${({ theme }) => theme.oppositeBackground};
 
     @media screen and (min-width: 428px) {
-      fill: ${({ theme, toggle }) =>
+      color: ${({ theme, toggle }) =>
         toggle ? theme.background : theme.oppositeBackground};
     }
   }
@@ -94,7 +93,7 @@ export const IconContainer = styled.div`
 
 export const NavMenu = styled.ul`
   position: fixed;
-  top: ${({ toggle }) => (toggle ? 0 : `-100%`)};
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -105,6 +104,17 @@ export const NavMenu = styled.ul`
   background-color: ${({ theme }) => theme.background};
   z-index: 99;
   gap: 1rem;
+  opacity: ${({ toggle }) => (toggle ? 1 : 0)};
+  visibility: ${({ toggle }) => (toggle ? "visible" : "hidden")};
+  transition: opacity 0.4s;
+
+  .nav-transition {
+    opacity: ${({ toggle }) => (toggle ? 1 : 0)};
+    transform: ${({ toggle }) =>
+      toggle ? "translateY(0)" : "translateY(50px)"};
+    transition: opacity, transform 0.3s;
+    transition-delay: 200ms;
+  }
 
   p {
     padding-top: 20px;
@@ -125,10 +135,25 @@ export const NavMenu = styled.ul`
     left: unset;
     width: 370px;
     height: 450px;
-    opacity: ${({ toggle }) => (toggle ? 1 : 0)};
-    visibility: ${({ toggle }) => (toggle ? "visible" : "hidden")};
-    background-color: ${({ theme, toggle }) =>
-      toggle ? theme.oppositeBackground : theme.background};
+    background-color: transparent;
+
+    ::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: ${({ theme, toggle }) =>
+        toggle ? theme.oppositeBackground : theme.background};
+      transition: 0.3s;
+      transform: ${({ toggle }) =>
+        toggle ? "scale(1)" : "scaleX(.3826) scaleY(.27)"};
+      transform-origin: top right;
+      z-index: -1;
+    }
   }
 `;
 
