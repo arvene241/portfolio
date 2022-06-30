@@ -72,8 +72,8 @@ function Navbar() {
               Resume
             </NavLinks>
             <Text>Say Hello</Text>
-            <NavLinks href="mailto:arvene.business@gmail.com">
-              arvene.business@gmail.com
+            <NavLinks href="mailto:hello@arvene.live">
+              hello@arvene.live
             </NavLinks>
           </div>
         </NavMenu>
