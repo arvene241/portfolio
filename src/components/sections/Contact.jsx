@@ -31,7 +31,7 @@ function Contact() {
           <SectionHeading>contact</SectionHeading>
           <BoldText>Don't be shy!</BoldText>
           <Text>
-            Don’t be shy! My inbox is always open. Feel free to send me an
+            My inbox is always open. Feel free to send me an
             email.
           </Text>
         </Content>
