@@ -16,18 +16,31 @@ import { motion } from "framer-motion";
 
 const navVariants = {
   hidden: {
-    y: -20,
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      when: "beforeChildren",
+    },
+  },
+};
+
+const navContent = {
+  hidden: {
+    y: -50,
     opacity: 0,
   },
   visible: {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 0.2,
+      duration: 0.3,
       ease: "easeInOut",
     },
   },
-};
+}
 
 function Navbar() {
   const pdfFile = "/assets/mike-arvene-lantin-resume.pdf";
@@ -43,18 +56,18 @@ function Navbar() {
         as={motion.div}
         initial={"hidden"}
         animate={"visible"}
-        transition={{ staggerChildren: 0.1 }}
+        variants={navVariants}
       >
-        <NavLogo href="#" toggle={toggle} as={motion.a} variants={navVariants}>
+        <NavLogo href="#" toggle={toggle} as={motion.a} variants={navContent}>
           arvene
         </NavLogo>
         <IconContainer>
-          <ToggleTheme toggle={toggle} variants={navVariants} />
+          <ToggleTheme toggle={toggle} variants={navContent} />
           <MobileIcon
             onClick={handleClick}
             toggle={toggle}
             as={motion.div}
-            variants={navVariants}
+            variants={navContent}
           >
             {toggle ? <BiX /> : <BiMenu />}
           </MobileIcon>
