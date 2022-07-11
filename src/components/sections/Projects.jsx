@@ -35,7 +35,7 @@ function Projects() {
                 <ProjectText>{project.desc}</ProjectText>
                 <Icons>
                   <IconLink
-                    href={project.link}
+                    href={project.githublink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
