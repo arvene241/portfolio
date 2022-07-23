@@ -3,6 +3,7 @@ import splitter from "../assets/splitter.webp"
 import todoapp from "../assets/todo-app.webp"
 import vaccstat from "../assets/vaccstat.webp"
 import youthden from "../assets/youthden.webp"
+import snap from '../assets/snap.webp'
 import { FaGithub } from 'react-icons/fa';
 import { IoOpenOutline } from 'react-icons/io5';
 
@@ -13,6 +14,15 @@ export const projectsData = [
         link: "https://arvene241.github.io/loop-studio-landing-page/",
         githublink: "https://github.com/arvene241/loop-studio-landing-page",
         img: loopstudio,
+        github_icon: <FaGithub />,
+        open_icon: <IoOpenOutline />
+    },
+    {
+        title: "snap",
+        desc: "A landing page challenge by Frontend Mentor built with React.js, and Styled-Components",
+        link: "https://snap-landing-page-nine.vercel.app/",
+        githublink: "https://github.com/arvene241/snap-landing-page",
+        img: snap,
         github_icon: <FaGithub />,
         open_icon: <IoOpenOutline />
     },
@@ -36,7 +46,7 @@ export const projectsData = [
     },
     {
         title: "vaccstat",
-        desc: "An app that enables fully vaccinated individuals to apply for a digital vaccination certificate. Built with React.js, Styled-Components, Firebase, and Javascript.",
+        desc: "An app that enables fully vaccinated individuals to apply for a digital vaccination certificate. Built with React.js, Styled-Components, and Firebase.",
         link: "https://vaccstat.vercel.app/",
         githublink: "https://github.com/arvene241/VaccStat",
         img: vaccstat,

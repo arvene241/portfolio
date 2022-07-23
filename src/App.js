@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ThemeContextProvider from "./context/ThemeModeContext";
 import Homepage from "./pages/Homepage";
 import GlobalStyle from "./styles/GlobalStyle";
