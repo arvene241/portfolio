@@ -1,7 +1,7 @@
 import loopstudio from "../assets/loopstudio.webp";
 import splitter from "../assets/splitter.webp"
 import todoapp from "../assets/todo-app.webp"
-import vaccstat from "../assets/vaccstat.webp"
+import space from "../assets/space-tourism.webp"
 import youthden from "../assets/youthden.webp"
 import snap from '../assets/snap.webp'
 import { FaGithub } from 'react-icons/fa';
@@ -45,11 +45,11 @@ export const projectsData = [
         open_icon: <IoOpenOutline />
     },
     {
-        title: "vaccstat",
-        desc: "An app that enables fully vaccinated individuals to apply for a digital vaccination certificate. Built with React.js, Styled-Components, and Firebase.",
-        link: "https://vaccstat.vercel.app/",
-        githublink: "https://github.com/arvene241/VaccStat",
-        img: vaccstat,
+        title: "space tourism",
+        desc: "A web app challenge by Frontend Mentor built with React.js, and Styled-Components",
+        link: "https://space-tourismm.vercel.app/",
+        githublink: "https://github.com/arvene241/space-tourism",
+        img: space,
         github_icon: <FaGithub />,
         open_icon: <IoOpenOutline />
     },
