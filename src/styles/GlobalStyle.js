@@ -2,7 +2,6 @@ import styled, { createGlobalStyle, css } from "styled-components";
 import Variables from "./Variables";
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500&display=swap');
   ${Variables};
 
   * {
@@ -15,9 +14,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #F7F9F8;
-    background-color: ${({ theme }) => theme.background};
-    color: ${({ theme }) => theme.color};
+    background-color: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
   }
 
   a {
@@ -83,7 +81,7 @@ export const icons = css`
   svg {
     width: 100%;
     height: 100%;
-    fill: ${({ theme }) => theme.color};
+    fill: ${({ theme }) => theme.text};
 
     :hover {
       opacity: 0.8;
@@ -109,7 +107,7 @@ export const Container = styled.div`
   @media screen and (min-width: 1024px) {
     flex-direction: row;
   }
-`
+`;
 
 export const Section = styled.section`
   ${flex};

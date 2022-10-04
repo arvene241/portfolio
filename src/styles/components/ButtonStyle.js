@@ -8,7 +8,7 @@ export const StyledButton = styled.a`
   overflow: hidden;
   background: transparent;
   font-size: var(--default-fs);
-  color: ${({ theme }) => theme.color};
+  color: ${({ theme }) => theme.text};
   text-transform: uppercase;
   user-select: none;
   cursor: pointer;
@@ -21,7 +21,7 @@ export const Hover = styled.div`
   height: 100%;
   z-index: 1;
   ${flex};
-  border: 1px solid ${({ theme }) => theme.buttonBorder};
+  border: 1px solid ${({ theme }) => theme.text};
   gap: 30px;
 
   svg {
@@ -30,18 +30,18 @@ export const Hover = styled.div`
   }
 
   :hover {
-    color: ${({ theme }) => theme.oppositeColor};
-    fill: ${({ theme }) => theme.oppositeColor};
+    color: ${({ theme }) => theme.body};
+    fill: ${({ theme }) => theme.body};
 
     ::before {
       transform: translateX(0);
-      background: ${({ theme }) => theme.buttonBorder};
+      background: ${({ theme }) => theme.text};
     }
   }
 
   ::before {
     content: "";
-    background: ${({ theme }) => theme.buttonBorder};
+    background: ${({ theme }) => theme.text};
     position: absolute;
     top: -0.1em;
     bottom: 0;
@@ -52,6 +52,6 @@ export const Hover = styled.div`
     pointer-events: none;
     z-index: -1;
     transform: translateX(-90%);
-    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
 `;

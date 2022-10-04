@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  background: ${({ theme }) => theme.background};
+  background: ${({ theme }) => theme.body};
   transition: top 0.3s;
   z-index: 100;
 `;
@@ -36,7 +36,7 @@ export const NavLogo = styled.a`
   font-size: var(--small-fs);
   font-family: var(--font-secondary);
   text-transform: uppercase;
-  color: ${({ theme }) => theme.color};
+  color: ${({ theme }) => theme.text};
   z-index: 100;
 
   @media screen and (min-width: 428px) {
@@ -81,7 +81,7 @@ export const MobileIcon = styled.div`
 
     @media screen and (min-width: 428px) {
       color: ${({ theme, toggle }) =>
-        toggle ? theme.background : theme.oppositeBackground};
+        toggle ? theme.body : theme.text};
     }
   }
 `;
@@ -101,7 +101,7 @@ export const NavMenu = styled.ul`
   align-items: start;
   flex-direction: column;
   padding: 0 50px;
-  background-color: ${({ theme }) => theme.background};
+  background-color: ${({ theme }) => theme.body};
   z-index: 99;
   gap: 1rem;
   opacity: ${({ toggle }) => (toggle ? 1 : 0)};
@@ -120,11 +120,11 @@ export const NavMenu = styled.ul`
     padding-top: 20px;
     text-transform: uppercase;
     letter-spacing: 0.25em;
-    color: ${({ theme }) => theme.color};
+    color: ${({ theme }) => theme.text};
 
     @media screen and (min-width: 428px) {
       color: ${({ theme, toggle }) =>
-        toggle ? theme.oppositeColor : theme.color};
+        toggle ? theme.body : theme.text};
     }
   }
 
@@ -147,7 +147,7 @@ export const NavMenu = styled.ul`
       width: 100%;
       height: 100%;
       background-color: ${({ theme, toggle }) =>
-        toggle ? theme.oppositeBackground : theme.background};
+        toggle ? theme.text : theme.body};
       transition: 0.3s;
       transform: ${({ toggle }) =>
         toggle ? "scale(1)" : "scaleX(.3826) scaleY(.27)"};
@@ -164,11 +164,11 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled.a`
-  color: ${({ theme }) => theme.color};
+  color: ${({ theme }) => theme.text};
   font-size: var(--small-fs);
 
   @media screen and (min-width: 428px) {
     color: ${({ theme, toggle }) =>
-      toggle ? theme.color : theme.oppositeColor};
+      toggle ? theme.text : theme.body};
   }
 `;

@@ -1,17 +1,11 @@
 export const lightTheme = {
-  background: "#F7F9F8",
-  color: "#000000",
-  oppositeBackground: "#001216",
-  oppositeColor: "#F7F9F8",
-  backgroundText: "#CFCFCF",
-  buttonBorder: "#001216",
+  body: "#F8F9FA",
+  text: "#000201",
+  accent: "#0C82E3",
 };
 
 export const darkTheme = {
-  background: "#001216",
-  color: "#F7F9F8",
-  oppositeBackground: "#F7F9F8",
-  oppositeColor: "#000000",
-  backgroundText: "#CFCFCF",
-  buttonBorder: "#F7F9F8",
+  body: "#020A13",
+  text: "#FFF",
+  accent: "#0C82E3",
 };

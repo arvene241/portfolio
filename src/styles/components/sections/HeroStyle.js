@@ -36,13 +36,13 @@ export const AboutMeLink = styled.a`
   z-index: 1;
 
   p {
-    color: ${({ theme }) => theme.color} !important;
+    color: ${({ theme }) => theme.text} !important;
     text-transform: capitalize;
   }
 
   :hover {
     text-decoration: underline;
-    color: ${({ theme }) => theme.color};
+    color: ${({ theme }) => theme.text};
   }
 
   svg {
