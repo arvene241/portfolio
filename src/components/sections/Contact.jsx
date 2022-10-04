@@ -43,7 +43,7 @@ function Contact() {
             download="true"
           />
           <Button
-            link="mailto:hello@arvene.live"
+            link="mailto:arvene.business@gmail.com"
             text="say hello"
             icon={<BsArrowRight />}
           />
