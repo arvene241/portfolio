@@ -1,5 +1,5 @@
 import loopstudio from "../assets/loopstudio.webp";
-import splitter from "../assets/splitter.webp"
+import metaversus from "../assets/metaversus.webp"
 import sneakers from "../assets/sneakers.webp"
 import space from "../assets/space-tourism.webp"
 import findtrend from "../assets/findtrend.webp"
@@ -13,7 +13,7 @@ export const projectsData = [
         desc: "A landing page built with React.js, Next.js and Tailwind CSS",
         link: "https://metaverseus.vercel.app/",
         githublink: "https://github.com/arvene241/metaverse_madness",
-        img: splitter,
+        img: metaversus,
         github_icon: <FaGithub />,
         open_icon: <IoOpenOutline />
     },
