@@ -1,11 +1,11 @@
 export const lightTheme = {
   body: "#F8F9FA",
   text: "#000201",
-  accent: "#0C82E3",
+  accent: "#18191A",
 };
 
 export const darkTheme = {
-  body: "#001216",
+  body: "#18191A",
   text: "#FFF",
-  accent: "#0C82E3",
+  accent: "#FFF",
 };

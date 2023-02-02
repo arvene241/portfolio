@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { icons, Section, Text } from "../../GlobalStyle";
 
 export const FooterSection = styled.footer`
-  background-color: ${({ theme }) => theme.text};
+  background-color: ${({ theme }) => theme.accent};
 `;
 
 export const FooterContainer = styled(Section)`
