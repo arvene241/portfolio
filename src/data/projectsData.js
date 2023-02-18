@@ -1,4 +1,4 @@
-import loopstudio from "../assets/loopstudio.webp";
+import dalle from "../assets/dall-e.webp";
 import metaversus from "../assets/metaversus.webp"
 import sneakers from "../assets/sneakers.webp"
 import space from "../assets/space-tourism.webp"
@@ -8,6 +8,15 @@ import { FaGithub } from 'react-icons/fa';
 import { IoOpenOutline } from 'react-icons/io5';
 
 export const projectsData = [
+    {
+        title: "dall-e",
+        desc: "Dall-E clone built with React.js, MongoDB, Express, Node, Typescript, Tailwind CSS, and OpenAI",
+        link: "https://rai-dall-e.vercel.app/",
+        githublink: "https://github.com/arvene241/dall-e",
+        img: dalle,
+        github_icon: <FaGithub />,
+        open_icon: <IoOpenOutline />
+    },
     {
         title: "metaversus",
         desc: "A landing page built with React.js, Next.js and Tailwind CSS",
@@ -50,15 +59,6 @@ export const projectsData = [
         link: "https://findtrend-five.vercel.app/",
         githublink: "https://github.com/arvene241/findtrend",
         img: findtrend,
-        github_icon: <FaGithub />,
-        open_icon: <IoOpenOutline />
-    },
-	{
-        title: "loopstudio",
-        desc: "A landing page challenge by Frontend Mentor built with HTML, Tailwind CSS, and Javascript",
-        link: "https://arvene241.github.io/loop-studio-landing-page/",
-        githublink: "https://github.com/arvene241/loop-studio-landing-page",
-        img: loopstudio,
         github_icon: <FaGithub />,
         open_icon: <IoOpenOutline />
     },
