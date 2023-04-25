@@ -43,7 +43,7 @@ const navContent = {
 }
 
 function Navbar() {
-  const pdfFile = "/assets/mike-arvene-lantin-resume.pdf";
+  const pdfFile = "/assets/mike arvene lantin - resume.pdf";
   const [toggle, setToggle] = useState(false);
 
   const handleClick = () => {

@@ -3,7 +3,7 @@ import { flex } from "../GlobalStyle";
 
 export const Nav = styled.nav`
   position: fixed;
-  padding-top: 25px;
+  padding: 20px 0;
   top: 0;
   left: 0;
   width: 100%;

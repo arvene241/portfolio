@@ -51,8 +51,7 @@ function Hero() {
             frontend developer
           </HeroHeading>
           <Text as={motion.p} variants={YAnimate}>
-            A 21-year-old self-taught frontend web developer in the Philippines.
-            I'm specialized in building responsive web applications using React.
+            A 22-year-old self-taught front-end web developer in the Philippines. I'm specialized in building responsive web applications using React.
           </Text>
           <AboutMeLink href="#about" as={motion.a} variants={YAnimate}>
             <Text>

@@ -25,19 +25,19 @@ function About() {
             about
           </SectionHeading>
           <Text as={motion.p} variants={YAnimate}>
-            I’m college student and currently pursuing a bachelor's degree in
-            Computer Science from Batangas State University. My main focus these
-            days is building responsive and beautiful looking web applications
-            and learning modern technologies for the web. I mostly work on
+            I'm a college student pursuing a bachelor's degree in Computer
+            Science from Batangas State University. My main focus these days is
+            building responsive and beautiful-looking web applications and
+            learning modern technologies for the web. I primarily work on
             personal projects and sometimes on freelance projects.
           </Text>
           <motion.div variants={YAnimate}>
             <BoldText>Technical</BoldText>
             <Text>
-              Right now you can find me working with React.js,
-              Styled-Components, and in general anything HTML, Javascript, and
-              CSS related. Also been studying how to use Redux, and my goal is
-              to become MERN stack developer.
+              Right now, you can find me working with React.js,
+              Styled-Components, and anything HTML, Javascript, and CSS related.
+              Also been studying how to use Typescript, and my goal is to become
+              a MERN stack developer.
             </Text>
           </motion.div>
         </Content>

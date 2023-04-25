@@ -3,7 +3,7 @@ import metaversus from "../assets/metaversus.webp"
 import sneakers from "../assets/sneakers.webp"
 import space from "../assets/space-tourism.webp"
 import findtrend from "../assets/findtrend.webp"
-import snap from '../assets/snap.webp'
+import dictionary from '../assets/dictionary.webp'
 import { FaGithub } from 'react-icons/fa';
 import { IoOpenOutline } from 'react-icons/io5';
 
@@ -36,11 +36,11 @@ export const projectsData = [
         open_icon: <IoOpenOutline />
     },
     {
-        title: "snap",
-        desc: "A landing page challenge by Frontend Mentor built with React.js, and Styled-Components",
-        link: "https://snap-landing-page-nine.vercel.app/",
-        githublink: "https://github.com/arvene241/snap-landing-page",
-        img: snap,
+        title: "dictionary",
+        desc: "A web app using the Dictionary API built with React.js and Tailwind CSS",
+        link: "https://dictionary-arvene241.vercel.app/",
+        githublink: "https://github.com/arvene241/dictionary",
+        img: dictionary,
         github_icon: <FaGithub />,
         open_icon: <IoOpenOutline />
     },

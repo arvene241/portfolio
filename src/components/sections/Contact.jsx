@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 import { YAnimate, parentAnimate } from "../../data/animations";
 
 function Contact() {
-  const pdfFile = "/assets/mike-arvene-lantin-resume.pdf";
+  const pdfFile = "/assets/mike arvene lantin - resume.pdf";
 
   return (
     <Section id="contact">
