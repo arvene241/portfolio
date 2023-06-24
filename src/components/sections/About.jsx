@@ -29,15 +29,14 @@ function About() {
             Science from Batangas State University. My main focus these days is
             building responsive and beautiful-looking web applications and
             learning modern technologies for the web. I primarily work on
-            personal projects and sometimes on freelance projects.
+            personal projects and looking for job opportunities that would help me grow as a developer.
           </Text>
           <motion.div variants={YAnimate}>
             <BoldText>Technical</BoldText>
             <Text>
               Right now, you can find me working with React.js,
               Styled-Components, and anything HTML, Javascript, and CSS related.
-              Also been studying how to use Typescript, and my goal is to become
-              a MERN stack developer.
+              I have also been studying how to use Next and Typescript.
             </Text>
           </motion.div>
         </Content>
