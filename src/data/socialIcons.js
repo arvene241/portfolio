@@ -14,7 +14,7 @@ export const socialIcons = [
     icon: <FaInstagram />
   },
   {
-    link: "https://www.twitter.com/arvene241/",
+    link: "https://twitter.com/arvenelantin",
     icon: <FaTwitter />
   },
 ];
