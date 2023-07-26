@@ -35,7 +35,7 @@ function About() {
             <BoldText>Technical</BoldText>
             <Text>
               Right now, you can find me working with React.js,
-              Styled-Components, and anything HTML, Javascript, and CSS related.
+              Tailwind CSS, and anything HTML, Javascript, and CSS related.
               I have also been studying how to use Next and Typescript.
             </Text>
           </motion.div>
