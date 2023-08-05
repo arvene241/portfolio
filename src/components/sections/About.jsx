@@ -25,18 +25,17 @@ function About() {
             about
           </SectionHeading>
           <Text as={motion.p} variants={YAnimate}>
-            I'm a college student pursuing a bachelor's degree in Computer
-            Science from Batangas State University. My main focus these days is
-            building responsive and beautiful-looking web applications and
-            learning modern technologies for the web. I primarily work on
-            personal projects and looking for job opportunities that would help me grow as a developer.
+            Recently graduated from college and hold a bachelor's degree in Computer Science from Batangas State University.
+            My main focus these days is building responsive and beautiful-looking web applications, while continuously 
+            learning modern web technologies. I primarily work on personal projects and actively seek 
+            job opportunities that will foster my growth as a developer.
           </Text>
           <motion.div variants={YAnimate}>
             <BoldText>Technical</BoldText>
             <Text>
               Right now, you can find me working with React.js,
               Tailwind CSS, and anything HTML, Javascript, and CSS related.
-              I have also been studying how to use Next and Typescript.
+              Additionally, I have been gaining expertise in working with Next.js and TypeScript.
             </Text>
           </motion.div>
         </Content>
