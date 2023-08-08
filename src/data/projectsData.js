@@ -1,5 +1,5 @@
 import dalle from "../assets/dall-e.webp";
-import metaversus from "../assets/metaversus.webp"
+import rainime from "../assets/rainime.webp"
 import sneakers from "../assets/sneakers.webp"
 import space from "../assets/space-tourism.webp"
 import shortyqr from "../assets/Shortyqr.webp"
@@ -8,6 +8,15 @@ import { FaGithub } from 'react-icons/fa';
 import { IoOpenOutline } from 'react-icons/io5';
 
 export const projectsData = [
+    {
+        title: "rainime",
+        desc: "Anime streaming site built with Next.js, Tailwind CSS, Typescript and Consumet API",
+        link: "https://rainimee.vercel.app/",
+        githublink: "https://github.com/arvene241/rainime",
+        img: rainime,
+        github_icon: <FaGithub />,
+        open_icon: <IoOpenOutline />
+    },
 	{
         title: "shortyqr",
         desc: "Shortyqr is an dynamic short URL and QR code generator inspired by dub. Built with Next.js, Tailwind CSS, and Typescript",
@@ -32,15 +41,6 @@ export const projectsData = [
         link: "https://dictionary-arvene241.vercel.app/",
         githublink: "https://github.com/arvene241/dictionary",
         img: dictionary,
-        github_icon: <FaGithub />,
-        open_icon: <IoOpenOutline />
-    },
-    {
-        title: "metaversus",
-        desc: "A landing page built with React.js, Next.js and Tailwind CSS",
-        link: "https://metaverseus.vercel.app/",
-        githublink: "https://github.com/arvene241/metaverse_madness",
-        img: metaversus,
         github_icon: <FaGithub />,
         open_icon: <IoOpenOutline />
     },
