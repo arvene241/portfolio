@@ -1,4 +1,4 @@
-import dalle from "../assets/dall-e.webp";
+import loopstudio from "../assets/loopstudio.webp";
 import rainime from "../assets/rainime.webp"
 import sneakers from "../assets/sneakers.webp"
 import space from "../assets/space-tourism.webp"
@@ -27,15 +27,6 @@ export const projectsData = [
         open_icon: <IoOpenOutline />
     },
     {
-        title: "dall-e",
-        desc: "Dall-E clone built with React.js, MongoDB, Express, Node, Typescript, Tailwind CSS, and OpenAI",
-        link: "https://rai-dall-e.vercel.app/",
-        githublink: "https://github.com/arvene241/dall-e",
-        img: dalle,
-        github_icon: <FaGithub />,
-        open_icon: <IoOpenOutline />
-    },
-    {
         title: "dictionary",
         desc: "A web app using the Dictionary API built with React.js and Tailwind CSS",
         link: "https://dictionary-arvene241.vercel.app/",
@@ -59,6 +50,15 @@ export const projectsData = [
         link: "https://ecommerce-product-pagee.vercel.app/",
         githublink: "https://github.com/arvene241/ecommerce-product-page",
         img: sneakers,
+        github_icon: <FaGithub />,
+        open_icon: <IoOpenOutline />
+    },
+    {
+        title: "loopstudio",
+        desc: "A landing page challenge by Frontend Mentor built with HTML, Tailwind CSS, and Javascript",
+        link: "https://arvene241.github.io/loop-studio-landing-page/",
+        githublink: "https://github.com/arvene241/loop-studio-landing-page",
+        img: loopstudio,
         github_icon: <FaGithub />,
         open_icon: <IoOpenOutline />
     },

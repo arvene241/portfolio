@@ -40,6 +40,7 @@ export const Project = styled.div`
       linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.7) 100%)
       repeat 0 0;
     z-index: 1;
+    border-radius: 4px;
   }
 
   @media screen and (min-width: 769px) {
