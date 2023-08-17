@@ -1,12 +1,13 @@
 <a href="https://arvene.vercel.app/">
-  <img alt="Personal portfolio" src="https://raw.githubusercontent.com/arvene241/portfolio/main/public/assets/preview.webp">
+  <img alt="Mike Arvene Lantin Portfolio" src="https://raw.githubusercontent.com/arvene241/portfolio/master/public/assets/preview.webp">
   <h1 align="center">Mike Arvene Lantin Portfolio</h1>
 </a>
 
 <p align="center">
   <a href="#features"><strong>Features</strong></a> ·
   <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
-  <a href="#installation"><strong>Installation</strong></a>
+  <a href="#installation"><strong>Installation</strong></a> ·
+  <a href=#contributing><strong>Contributing</strong></a>
 </p>
 
 <br/>
@@ -34,11 +35,17 @@
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `src/app.js`. The page auto-updates as you edit the file.
+
+## Contributing
+
+Here's how you can contribute:
+
+- [Open an issue](https://github.com/arvene241/portfolio/issues) if you believe you've encountered a bug.
+- Make a [pull request](https://github.com/arvene241/portfolio/pulls) to add new features/improvements/fix bugs.
     
 ## Authors
 
 - [Mike Arvene Lantin](https://arvene.vercel.app/)
-
 
 ## License
 
