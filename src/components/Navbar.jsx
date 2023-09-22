@@ -81,7 +81,7 @@ function Navbar() {
             </NavItem>
           ))}
           <div className="nav-transition" toggle={toggle}>
-            <NavLinks href={pdfFile} target="_blank" download rel="noreferrer">
+            <NavLinks href={pdfFile} target="_blank" download rel="noreferrer" aria-label="Resume Link">
               Resume
             </NavLinks>
             <Text>Say Hello</Text>

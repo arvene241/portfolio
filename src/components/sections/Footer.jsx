@@ -20,6 +20,7 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               key={index}
+              aria-label={icon.link}
             >
               {icon.icon}
             </SocialLinks>

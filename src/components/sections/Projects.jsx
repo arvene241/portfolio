@@ -38,6 +38,7 @@ function Projects() {
                     href={project.githublink}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Github Link"
                   >
                     {project.github_icon}
                   </IconLink>
@@ -45,6 +46,7 @@ function Projects() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Open Link"
                   >
                     {project.open_icon}
                   </IconLink>

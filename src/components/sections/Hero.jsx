@@ -66,13 +66,14 @@ function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={index}
+                aria-label={icon.link}
               >
                 {icon.icon}
               </SocialLinks>
             ))}
           </SocialIcons>
         </Content>
-        <HeroPeeps src={heroPeep} as={motion.img} variants={XAnimate} />
+        <HeroPeeps src={heroPeep} as={motion.img} variants={XAnimate} alt="hero image" />
       </HeroContainer>
     </HeroSection>
   );
